@@ -1,5 +1,6 @@
 import './Sidebar.css';
 import { sidebarLinks } from './data';
+import jane from '../../assets/jane-doe.jpg';
 
 const Sidebar = () => {
   return (
@@ -21,8 +22,12 @@ const Sidebar = () => {
 
         <ul className="sidebar__friends">
           <li className="sidebar__friend">
-            <img className="sidebar__friendImage" src="" alt="" />
+            <img className="sidebar__friendImage" src={jane} alt="pic" />
             <span className="sidebar__friendName">Jane Doe</span>
+          </li>
+          <li className="sidebar__friend">
+            <img className="sidebar__friendImage" src={jane} alt="pic" />
+            <span className="sidebar__friendName">Ken Black</span>
           </li>
         </ul>
       </div>
