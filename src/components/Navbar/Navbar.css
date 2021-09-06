@@ -1,0 +1,95 @@
+.navbar {
+  height: 50px;
+  width: 100%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar__left {
+  flex: 3;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar__center {
+  flex: 5;
+}
+
+.searchbar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar__icon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+
+.searchbar__input {
+  border: none;
+  width: 90%;
+}
+
+.searchbar__input:focus {
+  outline: none;
+}
+
+.navbar__right {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.navbar__link {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navbar__icons {
+  display: flex;
+}
+
+.navbar__icon {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar__iconBadge {
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}

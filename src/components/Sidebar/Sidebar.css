@@ -1,0 +1,57 @@
+.sidebar {
+  flex: 3;
+  height: calc(100vh - 50px);
+}
+
+.sidebar__wrapper {
+  padding: 20px;
+  background-color: darkcyan;
+}
+
+.sidebar__link {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar__linkItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar__linkItemText {
+  margin-left: 15px;
+}
+
+.sidebar__button {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.sidebar__hr {
+  margin: 20px 0;
+}
+
+.sidebar__friends {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar__friend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sidebar__friendImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
