@@ -1,3 +1,78 @@
 .rightbar {
   flex: 3.5;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+}
+
+.rightbar::-webkit-scrollbar {
+  width: 0;
+}
+
+.rightbar__wrapper {
+  padding: 20px 20px 0 0;
+}
+
+.rightbar__giftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.rightbar__giftImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.rightbar__giftText {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.rightbar__ad {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.rightbar__title {
+  margin-bottom: 20px;
+}
+
+.rightbar__friendsList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.rightbar__friend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rightbar__profileImgContainer {
+  margin-right: 10px;
+  position: relative;
+}
+
+.rightbar__profileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rightbar__online {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  top: -2;
+  right: 0;
+  border: 2px solid white;
+}
+
+.rightbar__username {
+  font-weight: 500;
 }

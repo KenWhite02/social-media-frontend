@@ -1,12 +1,12 @@
-import './Navbar.css';
 import { Search, Person, Chat, Notifications } from '@material-ui/icons';
-import profilePic from '../../assets/profile-pic.jpg';
+import kenwhite from '../../assets/user-profiles/ken-white.jpg';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__left">
-        <span className="navbar__logo">_whitish_social 🌍</span>
+        <span className="navbar__logo">whitish social</span>
       </div>
       <div className="navbar__center">
         <div className="searchbar">
@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
         </div>
         <img
-          src={profilePic}
+          src={kenwhite}
           alt="profile"
           width="300"
           className="navbar__image"

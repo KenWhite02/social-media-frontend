@@ -1,6 +1,5 @@
 import './Sidebar.css';
-import { sidebarLinks } from './data';
-import jane from '../../assets/jane-doe.jpg';
+import { sidebarLinks, shortcuts } from './data';
 
 const Sidebar = () => {
   return (
@@ -18,18 +17,21 @@ const Sidebar = () => {
           })}
         </ul>
         <button className="sidebar__button">Show More</button>
+
         <hr className="sidebar__hr" />
 
-        <ul className="sidebar__friends">
-          <li className="sidebar__friend">
-            <img className="sidebar__friendImage" src={jane} alt="pic" />
-            <span className="sidebar__friendName">Jane Doe</span>
-          </li>
-          <li className="sidebar__friend">
-            <img className="sidebar__friendImage" src={jane} alt="pic" />
-            <span className="sidebar__friendName">Ken Black</span>
-          </li>
-        </ul>
+        <h3 style={{ marginBottom: '10px' }}>Your Shortcuts</h3>
+        {shortcuts.map((shortcut) => {
+          const { id, image, name } = shortcut;
+          return (
+            <ul className="sidebar__shortcuts">
+              <li className="sidebar__shortcut" key={id}>
+                <img className="sidebar__shortcutImage" src={image} alt="pic" />
+                <span className="sidebar__shortcutName">{name}</span>
+              </li>
+            </ul>
+          );
+        })}
       </div>
     </div>
   );

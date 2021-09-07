@@ -10,6 +10,11 @@ import {
   School,
 } from '@material-ui/icons';
 
+// Shortcut Images
+import nairobabe from '../../assets/user-profiles/nairobabe.jpg';
+import gsw from '../../assets/user-profiles/golden-state.jpg';
+import pubg from '../../assets/user-profiles/pubg.jpg';
+
 export const sidebarLinks = [
   {
     id: 1,
@@ -58,4 +63,8 @@ export const sidebarLinks = [
   },
 ];
 
-export const sidebarFriends = [];
+export const shortcuts = [
+  { id: 1, image: nairobabe, name: 'Nairobabe' },
+  { id: 2, image: gsw, name: 'Golden State Warriors' },
+  { id: 3, image: pubg, name: 'Pubg Mobile' },
+];
