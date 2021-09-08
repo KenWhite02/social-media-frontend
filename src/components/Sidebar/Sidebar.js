@@ -21,17 +21,17 @@ const Sidebar = () => {
         <hr className="sidebar__hr" />
 
         <h3 style={{ marginBottom: '10px' }}>Your Shortcuts</h3>
-        {shortcuts.map((shortcut) => {
-          const { id, image, name } = shortcut;
-          return (
-            <ul className="sidebar__shortcuts">
+        <ul className="sidebar__shortcuts">
+          {shortcuts.map((shortcut) => {
+            const { id, image, name } = shortcut;
+            return (
               <li className="sidebar__shortcut" key={id}>
                 <img className="sidebar__shortcutImage" src={image} alt="pic" />
                 <span className="sidebar__shortcutName">{name}</span>
               </li>
-            </ul>
-          );
-        })}
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

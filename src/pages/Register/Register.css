@@ -1,0 +1,84 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__wrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.register__left,
+.register__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register__logo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+}
+
+.register__desc {
+  font-size: 24px;
+}
+
+.register__box {
+  height: 420px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register__input {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.register__input:focus {
+  outline: none;
+}
+
+.register__button {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1775ee;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.register__forgot {
+  text-align: center;
+  color: #1775ee;
+}
+
+.register__loginButton {
+  width: 60%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  align-self: center;
+  background-color: #42b72a;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}

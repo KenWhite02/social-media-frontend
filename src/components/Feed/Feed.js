@@ -1,5 +1,6 @@
 import Share from '../Share/Share';
 import Post from '../Post/Post';
+import { userPosts } from '../Post/data';
 import './Feed.css';
 
 const Feed = () => {
@@ -7,7 +8,9 @@ const Feed = () => {
     <div className="feed">
       <div className="feed__wrapper">
         <Share />
-        <Post />
+        {userPosts.map((user) => {
+          return <Post key={user.id} post={user} />;
+        })}
       </div>
     </div>
   );

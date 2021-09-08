@@ -76,3 +76,49 @@
 .rightbar__username {
   font-weight: 500;
 }
+
+/* Profile Rightbar */
+.rightbar__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.rightbar__info {
+  margin-bottom: 30px;
+}
+
+.rightbar__infoItem {
+  margin-bottom: 10px;
+}
+
+.rightbar__infoKey {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+
+.rightbar__infoValue {
+  font-weight: 300;
+}
+
+.rightbar__followings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.rightbar__following {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.rightbar__followingImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}

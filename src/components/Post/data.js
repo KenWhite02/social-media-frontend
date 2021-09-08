@@ -12,7 +12,7 @@ import leviPost from '../../assets/user-posts/levi-post.jpg';
 import gojoPost from '../../assets/user-posts/gojo-post.jpg';
 import pubgPost from '../../assets/user-posts/pubg-post.jpg';
 import stephPost from '../../assets/user-posts/steph-post.jpg';
-import kenwhitePost from '../../assets/user-posts/bike-post.jpg';
+import kenwhitePost from '../../assets/user-posts/cat.jpg';
 
 export const userPosts = [
   {
